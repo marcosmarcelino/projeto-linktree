@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Está definindo um documento html 5-->
+<html lang="pt-br" class="">
+  <!-- Document element ou Root element, que é o elemento raiz, possui uma propriedade chamada lang="" que é a linguagem -->
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Head é a tag responsável por ajustar configurações do documento, que não são visiveis ao usuário -->
+    <meta charset="UTF-8" />
+    <!-- Permite que a página utilize caracteres especiais como: ç, acentos -->
+    <meta http-equiv="X-UA-Compatible" coontent="IE=edge" />
+    <!-- Serve para fazer uma compatibilidade com navegadores um pouco mais antigos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Serve para que a parte visivel tenha o conteúdo dentro tenha como largura do dispositivo -->
+    <title>DevLinks</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Nessa tag é feito um relacionamento com um arquivo do tipo stylesheet e no href coloco em que lugar do mundo está esse arquivo CSS -->
+  </head>
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img
+          src="./assets/avatar.png"
+          alt="Foto de Marcos Marcelino com a feição de sério, usando camisa preta barba em um local fechado com parede azul, uma porta a direita dele na foto e uma janela ao fundo a esquerda dele"
+        />
+        <p>@marcosmarcelino</p>
+      </div>
+
+      <div id="switch" onclick="toggleMode()">
+        <button>
+        </button>
+        <span></span>
+      </div>
+
+      <ul>
+        <li>
+          <a
+            href="https://www.youtube.com/watch?v=9DRY-aNPta0&list=PLcoYAcR89n-qTYqfWTGxXMnAvCqY3JF8w"
+            target="_blank"
+            >Curso de VueJS gratuito no Youtube Tiago Matos</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/marcosmarcelino?tab=repositories" target="_blank"
+            >Veja meu portfólio</a
+          >
+        </li>
+        <li>
+          <a href="https://www.rocketseat.com.br/Discover" target="_blank"
+            >Conheça o Discorver da Rocketseat</a
+          >
+        </li>
+      </ul>
+      <div id="social-links">
+        <a href="https://github.com/marcosmarcelino" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+        <a href="https://www.youtube.com/@marcosmarcelino0" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+        <a href="https://www.linkedin.com/in/marcosm-santos/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="https://instagram.com/marcos.marcelino0" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+      </div>
+      <footer>
+        Feito com ♥ pela <a href="https://rocketseat.com.br" target="_blank">Rocketseat</a>
+      </footer>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
